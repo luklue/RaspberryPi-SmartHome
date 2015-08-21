@@ -70,4 +70,4 @@ root@black-pearl ~ $ apt-get update
 root@black-pearl ~ $ apt-get upgrade
 root@black-pearl ~ $ apt-get install nginx php5-fpm
 ````
-vxvby
+

@@ -34,7 +34,7 @@ ReadMe so you might want to skip some parts.
 ###4. Installation of the distribution + controlling of the Raspi via ssh
 Type into the shell: 
 ````php
-Luk7q@Xubuntu ~ $ dd bs=1M if=[IMG] of=[DEVICE]"
+Luk7q@Xubuntu ~ $ sudo dd bs=1M if=[IMG] of=[DEVICE]
 ````
 Replace [IMG] with the path to the distribution and [DEVICE] with the path to your SD-Card.
 For the first installation you should connect your Raspi with a keyboard and a monitor.
@@ -71,7 +71,15 @@ root@black-pearl ~ $ apt-get upgrade
 root@black-pearl ~ $ apt-get install nginx php5-fpm git-core
 root@black-pearl ~ $ git clone git://git.drogon.net/wiringPi
 root@black-pearl ~ $ cd wiringPi
-root@black-pearl ~ $ git pull origin
-root@black-pearl ~ $ ./build
+root@black-pearl in ~/wiringPi $ git pull origin
+root@black-pearl in ~/wiringPi $ ./build
+````
+Now we're going to replace some files. First of all replace the nginx.conf under the located path.
+````php
+sftp://[Raspi IP]/etc/nginx/nginx.conf
+````
+Then replace the server.conf
+````php
+sftp://[Raspi IP]/etc/nginx/sites-available/server.conf
 ````
 

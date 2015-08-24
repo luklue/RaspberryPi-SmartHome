@@ -32,24 +32,8 @@ ReadMe so you might want to skip some parts.
     
     
 ###4. Installation of the distribution + controlling of the Raspi via ssh
-Type into the shell: 
-````php
-Luk7q@Xubuntu ~ $ sudo dd bs=1M if=[IMG] of=[DEVICE]
-````
-Replace [IMG] with the path to the distribution and [DEVICE] with the path to your SD-Card. This may take some time and no process is shown. For the first installation you should connect your Raspi with a keyboard and a monitor. After you finished copying your distribution you can put the SD-Card in the Raspi and connect it with the power cable.
-
-Your username is "root" and your password is "hypriot"
-[Beware that it is now an American keyboard layout!]
-Type into the shell 
-````php
-root@black-pearl ~ $ hostname -I
-````
-and write down the IP-adress. Now we can disconnect the keyboard and monitor from
-the Raspi and we continue our work from a normal computer with a ssh connection to the Raspi.
-To connect your PC with the Raspi just type into the shell: 
-````php
-Luk7q@Xubuntu ~ $ ssh root@[IP]
-````
+Just follow this pretty good guide :-)
+http://blog.hypriot.com/getting-started-with-docker-and-linux-on-the-raspberry-pi/
 
 Lets have some fun at this step. To see if everything works fine you can connect a LED (+ resistor) with gpio 17. To
 see a list of the gpios and Pins look here: http:

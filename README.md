@@ -1,4 +1,4 @@
-#Raspberry Pi Smart Home Projekt
+#Raspberry Pi Smart Home Project
 
 ###Contents
 * 1. Short Introduction

@@ -64,10 +64,14 @@ root@black-pearl ~ $ echo "1" > /sys/class/gpio/gpio17/value
 Now we can turn the LED on/off.
 
 ###5. Installation of additional software
-First of all we're going to do an update + upgrade and installing the nginx webserver.
+First of all we're going to do an update + upgrade and installing the nginx webserver, PHP and wiringPi.
 ````php
 root@black-pearl ~ $ apt-get update
 root@black-pearl ~ $ apt-get upgrade
-root@black-pearl ~ $ apt-get install nginx php5-fpm
+root@black-pearl ~ $ apt-get install nginx php5-fpm git-core
+root@black-pearl ~ $ git clone git://git.drogon.net/wiringPi
+root@black-pearl ~ $ cd wiringPi
+root@black-pearl ~ $ git pull origin
+root@black-pearl ~ $ ./build
 ````
 

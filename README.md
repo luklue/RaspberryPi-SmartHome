@@ -32,7 +32,10 @@ ReadMe so you might want to skip some parts.
     
     
 ###4. Installation of the distribution + controlling of the Raspi via ssh
-To check how the installation and the controll via ssh works check this page: http://blog.hypriot.com/getting-started-with-docker-and-linux-on-the-raspberry-pi/
+To check how the installation and the controll via ssh works check this page:
+http://blog.hypriot.com/getting-started-with-docker-and-linux-on-the-raspberry-pi/
+Before you can controll the Raspi via ssh you need to configure the WLAN. Therefore check this guide [GERMAN]:
+https://www.datenreise.de/raspberry-pi-wlan-einrichten-edimax/
 Lets have some fun at this step. To see if everything works fine you can connect a LED (+ resistor) with gpio 17. To
 see a list of the gpios and Pins look here: http:
 ````php

@@ -32,25 +32,7 @@ ReadMe so you might want to skip some parts.
     
     
 ###4. Installation of the distribution + controlling of the Raspi via ssh
-Type into the shell: 
-````php
-Luk7q@Xubuntu ~ $ sudo dd bs=1M if=[IMG] of=[DEVICE]
-````
-Replace [IMG] with the path to the distribution and [DEVICE] with the path to your SD-Card. This may take some time and no process is shown. For the first installation you should connect your Raspi with a keyboard and a monitor. After you finished copying your distribution you can put the SD-Card in the Raspi and connect it with the power cable.
-
-Your username is "root" and your password is "hypriot"
-[Beware that it is now an American keyboard layout!]
-Type into the shell 
-````php
-root@black-pearl ~ $ hostname -I
-````
-and write down the IP-adress. Now we can disconnect the keyboard and monitor from
-the Raspi and we continue our work from a normal computer with a ssh connection to the Raspi.
-To connect your PC with the Raspi just type into the shell: 
-````php
-Luk7q@Xubuntu ~ $ ssh root@[IP]
-````
-
+To check how the installation and the controll via ssh works check this page: http://blog.hypriot.com/getting-started-with-docker-and-linux-on-the-raspberry-pi/
 Lets have some fun at this step. To see if everything works fine you can connect a LED (+ resistor) with gpio 17. To
 see a list of the gpios and Pins look here: http:
 ````php
@@ -66,7 +48,7 @@ First of all we're going to do an update + upgrade and installing the nginx webs
 ````php
 root@black-pearl ~ $ apt-get update
 root@black-pearl ~ $ apt-get upgrade
-root@black-pearl ~ $ apt-get install nginx php5-fpm git-core
+root@black-pearl ~ $ apt-get install nginx php5-fpm git-core build-essential
 root@black-pearl ~ $ git clone git://git.drogon.net/wiringPi
 root@black-pearl ~ $ cd wiringPi
 root@black-pearl in ~/wiringPi $ git pull origin
@@ -80,4 +62,5 @@ Then replace the server.conf
 ````php
 sftp://[Raspi IP]/etc/nginx/sites-available/server.conf
 ````
+service nginx reload
 

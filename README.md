@@ -59,11 +59,15 @@ root@black-pearl in ~/wiringPi $ ./build
 ````
 Now we're going to replace some files. First of all replace the nginx.conf under the located path.
 ````php
-sftp://[Raspi IP]/etc/nginx/nginx.conf
+/etc/nginx/nginx.conf
 ````
-Then replace the server.conf
+After that add the file server.conf here:
 ````php
-sftp://[Raspi IP]/etc/nginx/sites-available/server.conf
+/etc/nginx/sites-available/server.conf
 ````
-service nginx reload
-
+Now disable the default server and enable our new server:
+````php
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server
+service nginx start
+````

@@ -36,9 +36,7 @@ Type into the shell:
 ````php
 Luk7q@Xubuntu ~ $ sudo dd bs=1M if=[IMG] of=[DEVICE]
 ````
-Replace [IMG] with the path to the distribution and [DEVICE] with the path to your SD-Card.
-For the first installation you should connect your Raspi with a keyboard and a monitor.
-After you finished copying your distribution you can put the SD-Card in the Raspi and connect it with the power cable.
+Replace [IMG] with the path to the distribution and [DEVICE] with the path to your SD-Card. This may take some time and no process is shown. For the first installation you should connect your Raspi with a keyboard and a monitor. After you finished copying your distribution you can put the SD-Card in the Raspi and connect it with the power cable.
 
 Your username is "root" and your password is "hypriot"
 [Beware that it is now an American keyboard layout!]

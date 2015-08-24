@@ -67,7 +67,7 @@ After that add the file server.conf here:
 ````
 Now disable the default server and enable our new server:
 ````php
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server
-service nginx start
+root@black-pearl ~ $ rm /etc/nginx/sites-enabled/default
+root@black-pearl ~ $ ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server
+root@black-pearl ~ $ service nginx start
 ````

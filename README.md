@@ -1,7 +1,5 @@
 #Raspberry Pi Smart Home Project
 
-Blablabla. Rabarbar
-
 ###List of Contents
 * 1. Short Introduction
 * 2. Used Hardware
@@ -78,6 +76,6 @@ cd /var/www
 curl -sS https://getcomposer.org/installer | php
 php composer.phar require slim/slim
 ````
-In the last step we just have to copy and paste the files to /var/www
+In the last step we just have to copy and paste the listed files here at GitHub to /var/www
 
-Now you successfully setup the Raspiban Pi. You can access the Raspberry Pi with the IP adress in any browser, e.g. with your Smartphone. Some examples to use it, is to controll the light, the coffee machine or the radio. If you want to you can create an App or an Asterisk to controll your SmartHome via Smartphone or telefon. 
+You successfully did the setup of your new SmartHome with a Raspberry Pi. The possibilities are endless, have fun! 

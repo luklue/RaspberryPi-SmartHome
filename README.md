@@ -45,7 +45,7 @@ First of all we're going to do an update + upgrade and installing the nginx webs
 ````php
 root@black-pearl ~ $ apt-get update
 root@black-pearl ~ $ apt-get upgrade
-root@black-pearl ~ $ apt-get install nginx php5-fpm git-core build-essential
+root@black-pearl ~ $ apt-get install nginx php5-fpm php5-cli git-core build-essential
 root@black-pearl ~ $ git clone git://git.drogon.net/wiringPi
 root@black-pearl ~ $ cd wiringPi
 root@black-pearl in ~/wiringPi $ git pull origin
@@ -67,4 +67,14 @@ root@black-pearl ~ $ service nginx start
 ````
 
 ###5. Copying files
+Download the following files and place them in /var/www
+* https://codeload.github.com/IronSummitMedia/startbootstrap-4-col-portfolio/zip/v1.0.3 and rename it to * "bootstrap".
+* https://codeload.github.com/angularjs-de/angularjs-tutorial-code/zip/gh-pages and rename it to "angularjs".
+* https://code.angularjs.org/1.4.3/angular-1.4.3.zip 
+
+To install Slim Framework we're going to use the command line again.
+````php
+curl -sS https://getcomposer.org/installer | php
+php composer.phar require slim/slim
+````
 In the last step we just have to copy these files to /var/www

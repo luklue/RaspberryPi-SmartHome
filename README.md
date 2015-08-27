@@ -67,14 +67,17 @@ root@black-pearl ~ $ service nginx start
 ````
 
 ###5. Copying files
-Download the following files and place them in /var/www
-* https://codeload.github.com/IronSummitMedia/startbootstrap-4-col-portfolio/zip/v1.0.3 and rename it to * "bootstrap".
+Download and unzip the following files and place them in /var/www
+* https://codeload.github.com/IronSummitMedia/startbootstrap-4-col-portfolio/zip/v1.0.3 and rename it to "bootstrap".
 * https://codeload.github.com/angularjs-de/angularjs-tutorial-code/zip/gh-pages and rename it to "angularjs".
 * https://code.angularjs.org/1.4.3/angular-1.4.3.zip 
 
 To install Slim Framework we're going to use the command line again.
 ````php
+cd /var/www
 curl -sS https://getcomposer.org/installer | php
 php composer.phar require slim/slim
 ````
-In the last step we just have to copy these files to /var/www
+In the last step we just have to copy and paste the files to /var/www
+
+Now you successfully setup the Raspiban Pi. You can access the Raspberry Pi with the IP adress in any browser, e.g. with your Smartphone. Some examples to use it, is to controll the light, the coffee machine or the radio. If you want to you can create an App or an Asterisk to controll your SmartHome via Smartphone or telefon. 

@@ -26,6 +26,10 @@ Before you can controll the Raspi via ssh you need to configure the WLAN. Theref
 
 https://www.datenreise.de/raspberry-pi-wlan-einrichten-edimax/
 
+Remember to expand the filesystem so we can use the full size of the SD card. Check this answer as tutorial:
+
+http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition
+
 Lets have some fun at this step. To see if everything works fine you can connect a LED (+ resistor) with gpio 17. To
 see a list of the gpios and Pins look here:
 

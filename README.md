@@ -8,9 +8,7 @@
 * 5. Copying files
 
 ###1. Short Introduction
-In the summer of 2015 I did a practicum in a small company in Aachen, Germany. I started with literally zero knowledge
-of programming and during three weeks I googled the shit together to complete this projekt. This is a step by step
-ReadMe so you might want to skip some parts.
+In the summer of 2015 I did a internship in a small company in Aachen, Germany. I started with literally zero knowledge of programming and during three weeks I googled the shit together to complete this project. This is a step by step ReadMe so you might want to skip some parts.
 
 ###2. Used Hardware
 * Raspberry Pi B+ (In this project I just used 11 out of 40 Pins, so another Raspi might be possible)

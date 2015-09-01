@@ -53,14 +53,10 @@ root@black-pearl ~ $ cd wiringPi
 root@black-pearl in ~/wiringPi $ git pull origin
 root@black-pearl in ~/wiringPi $ ./build
 ````
-Now we're going to replace some files. First of all replace the nginx.conf under the located path.
-````php
-/etc/nginx/nginx.conf
-````
-After that add the file server.conf here:
-````php
-/etc/nginx/sites-available/server.conf
-````
+Now we're going to replace some files. First of all replace the nginx.conf and the server.conf
+
+You can find these files in the folder /etc
+
 Now disable the default server and enable our new server:
 ````php
 root@black-pearl ~ $ rm /etc/nginx/sites-enabled/default

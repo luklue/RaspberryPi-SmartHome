@@ -80,6 +80,41 @@ cd /var/www
 curl -sS https://getcomposer.org/installer | php
 php composer.phar require slim/slim
 ````
+
+We are going to write a small script that we have to execute after every restart of the Raspi. This script defines all the GPIOs. To create this scirpt type:
+````php
+nano /root/start.sh
+````
+And add this to the file:
+````php
+cd /sys/class/gpio
+echo "4" > export
+echo "14" > export
+echo "17" > export
+echo "18" > export
+echo "22" > export
+echo "23" > export
+echo "10" > export
+echo "25" > export
+echo "11" > export
+echo "8" > export
+echo "out" > gpio4/direction
+echo "in" > gpio14/direction
+echo "out" > gpio17/direction
+echo "in" > gpio18/direction
+echo "out" > gpio22/direction
+echo "in" > gpio23/direction
+echo "out" > gpio10/direction
+echo "in" > gpio25/direction
+echo "out" > gpio11/direction
+echo "in" > gpio8/direction
+cd
+echo "done"
+````
+To execute this file simple type this command (remember that you have to do this after every restart):
+````php
+sh ./start.sh
+````
 In the last step we just have to copy and paste the listed files here at GitHub to /var/www
 
 You successfully did the setup of your new SmartHome with a Raspberry Pi. The possibilities are endless, have fun! 

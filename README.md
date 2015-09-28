@@ -75,7 +75,7 @@ curl -sS https://getcomposer.org/installer | php
 php composer.phar require slim/slim
 ````
 
-We are going to write a small script that we have to execute after every restart of the Raspi. This script defines all the GPIOs. To create this scirpt type:
+We are going to write a small script that we have to execute after every restart of the Raspi. This script defines all the GPIOs. To create this script type:
 ````php
 nano /root/start.sh
 ````
